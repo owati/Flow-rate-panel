@@ -8,8 +8,6 @@ app = Flask(__name__, static_folder='../frontend/build', static_url_path='/')
 socket = SocketIO(app)
 cors = CORS(app)
 
-FLOW_RATE_DATA_KEY="flow.rate.data.key"
-
 
 @socket.on("connect")
 def on_connect():
