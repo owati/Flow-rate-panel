@@ -49,12 +49,12 @@ function App() {
 
       <div className='border-x-2 border-b w-full max-w-72 h-96 m-auto relative flex items-end'>
 
-        <div className={`border-y-2 w-20 absolute -left-20 h-8 ${output ? "bg-white/50" : "bg-slate-700"} top-10`}>
-          <p className='absolute text-sm -top-7 w-full text-center text-white'>{output.toFixed(2)}L/min</p>
+        <div className={`border-y-2 w-20 absolute -left-20 h-8 ${input ? "bg-white/50" : "bg-slate-700"} top-10`}>
+          <p className='absolute text-sm -top-7 w-full text-center text-white'>{input.toFixed(2)}L/min</p>
         </div>
 
-        <div className={`border-y-2 w-20 absolute -right-20 h-8 ${input ? "bg-white/50" : "bg-slate-700"} bottom-10`}>
-          <p className='absolute text-sm -top-7 w-full text-center text-white'>{input.toFixed(2)}L/min</p>
+        <div className={`border-y-2 w-20 absolute -right-20 h-8 ${output ? "bg-white/50" : "bg-slate-700"} bottom-10`}>
+          <p className='absolute text-sm -top-7 w-full text-center text-white'>{output.toFixed(2)}L/min</p>
         </div>
 
         {/* Quantity */}
